@@ -1,0 +1,5 @@
+{
+  "name": "AI Grammar Corrector",
+  "description": "A sleek and modern web application that uses the Gemini API to correct grammar, spelling, and style in your writing, providing instant, high-quality feedback to improve your text.",
+  "requestFramePermissions": []
+}
