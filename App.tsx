@@ -3,6 +3,7 @@ import React, { useState, useCallback, useMemo } from 'react';
 import { correctGrammar } from './services/geminiService';
 import Spinner from './components/Spinner';
 import { CopyIcon, CheckIcon, SparklesIcon } from './components/Icon';
+import Stopwatch from './components/Stopwatch';
 
 const App: React.FC = () => {
   const [inputText, setInputText] = useState<string>('');
@@ -56,7 +57,8 @@ const App: React.FC = () => {
   
   return (
     <div className="min-h-screen bg-slate-900 text-white flex flex-col items-center p-4 sm:p-6 lg:p-8 font-sans">
-      <div className="w-full max-w-4xl mx-auto">
+      <div className="relative w-full max-w-4xl mx-auto">
+        <Stopwatch />
         <header className="text-center mb-8 md:mb-12">
            <h1 className="text-4xl md:text-5xl font-extrabold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
             AI Grammar Corrector
